@@ -18,3 +18,8 @@ def init_func(argv):
     app.add_routes([web.get('/', handle),
                     web.get('/{name}', handle)])
     return app
+
+def init_func(argv):
+        app = web.Application()
+        app.add_routes([web.get('/', handler)
+        return app
